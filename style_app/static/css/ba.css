@@ -1,0 +1,70 @@
+
+
+body{
+    background: #fae7d9;
+    padding: 0px;
+    margin: 0px;
+    color: #572e5f;
+    font-family: Tahoma;
+    font-size: 12pt;
+}
+
+#hair{
+    height: 145px;
+    background: #faecc7;
+}
+
+.container{
+    width: 1170px;
+    margin: 0px auto;
+}
+
+.contacts{
+    text-align: center;
+    padding: 40px 0px 0px 412px;
+    font-size: 14pt;
+}
+
+.contacts span{
+    margin: 0px 0px 0px 2px;
+}
+
+.social{
+    margin: 12px 0px 0px 5px;
+}
+
+.logo{
+    float:left;
+    margin-left: 37px;
+    margin-top: 17px;
+}
+
+
+#navbar{
+    height: 53px;
+}
+
+/* цвет фона и рамки навигационного меню */
+.navbar-default {
+    background-color: #833a53;
+    border-color: #611919;
+}
+
+/* цвет текста, содержащий название сайта или бренда */
+.navbar-default .navbar-brand {
+    color: #faecc7;
+}
+/* цвет текста (название сайта или бренда), при поднесении к нему курсора мышки или при его нахождении в фокусе */
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #fff;
+}
+/* Цвет пунктов навигационного меню */
+.navbar-default .navbar-nav > li > a {
+    color: #faecc7;
+}
+/* Цвет пункта меню, при поднесении к нему курсора мышки или при его нахождении в фокусе */
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #fff;
+}

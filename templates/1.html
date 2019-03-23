@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+
+{% block title %}Воздушные локоны{% endblock %}
+{% block body %}
+
+
+    <section id ="curls">
+
+    <div class="container">
+        <div class="imagine">
+            {% load static %}
+            <img src="{% static 'images/monogram.png' %}">
+            <h3>Воздушные локоны</h3>
+        </div>
+
+        <div class="second_photos">
+
+                <div class="col-md-4">
+                    <a href="{% static 'images/11ku.jpg' %}" target="_blank">
+                          <img src="{% static 'images/11ku.jpg' %}" alt="bride" style= "width: 100%" >
+                    </a>
+                </div>
+
+                <div class="col-md-4">
+                    <a href="{% static 'images/12.jpg' %}" target="_blank">
+                          <img src="{% static 'images/12.jpg' %}" alt="bride" style= "width: 100%">
+                    </a>
+                </div>
+
+                <div class="col-md-4">
+                    <a href="{% static 'images/13ku.jpg' %}" target="_blank">
+                          <img src="{% static 'images/13ku.jpg' %}" alt="bride" style= "width: 100%">
+                    </a>
+                </div>
+
+                <div class="col-md-4">
+                    <a href="{% static 'images/14.jpg' %}" target="_blank">
+                          <img src="{% static 'images/14.jpg' %}" alt="bride" style= "width: 100%" class="photos">
+                    </a>
+                </div>
+
+                <div class="col-md-4">
+                    <a href="{% static 'images/16.jpg' %}" target="_blank">
+                          <img src="{% static 'images/16.jpg' %}" alt="bride" style= "width: 100%" class="photos">
+                    </a>
+                </div>
+
+                <div class="col-md-4">
+                    <a href="{% static 'images/15.jpg' %}" target="_blank">
+                          <img src="{% static 'images/15.jpg' %}" alt="bride" style= "width: 100%" class="photos">
+                    </a>
+                </div>
+
+
+
+        </div>
+
+    </div>
+    </section>
+
+
+{% endblock %}

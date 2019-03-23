@@ -1,0 +1,251 @@
+h3{
+    font-family: Annabelle;
+    font-size: 24pt;
+    color: #611919;
+    margin: 0px auto;
+    padding-top: 10px;
+}
+
+h4{
+    font-family: Tahoma;
+    font-weight: bold;
+    font-size: 14pt;
+    color: #611919;
+    margin: 0px auto;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+.leftimg {
+    float:left; /* Выравнивание по левому краю */
+    margin: 7px 7px 7px 0; /* Отступы вокруг картинки */
+   }
+
+
+#first{
+    height: 620px;
+}
+
+
+.girls{
+    float: left;
+    margin: 0px auto;
+}
+
+
+.hello{
+    text-align: center;
+    float: right;
+    width: 610px;
+    font-size: 12pt;
+    padding-top: 60px;
+    padding-right: 110px;
+    padding-left: 0px;
+
+}
+
+.hello button{
+    margin-left: 0px;
+    color: #611919;
+    margin-top: -7px;
+    font-size: 18pt;
+    font-family: Annabelle;
+
+
+}
+
+.hello h1{
+    color: #611919;
+    font-family: Annabelle;
+    font-size: 33pt;
+    padding: 0px auto;
+    margin: 5px 0px 0px 0px;
+}
+
+#second{
+    background: #faecc7;
+    height: 705px;
+}
+
+.imagine{
+    text-align: center;
+    padding-top: 50px;
+    font-family: Annabelle;
+    margin: 0px auto;
+    color: #61105a;
+}
+
+.second_photos{
+    margin-top: 17px;
+    text-align: center;
+}
+
+.second_photos button{
+    color: #611919;
+    margin-top: 7px;
+    font-size: 18pt;
+    font-family: Annabelle;
+
+}
+
+.get_consult{
+    padding-top: 40px;
+    padding-bottom: 17px;
+    font-family: Annabelle;
+}
+
+
+#third{
+    height: 250px;
+}
+
+.button{
+    float: left;
+    border-radius: 5px;
+    background: #64242d;
+    display: block;
+    width: 247px;
+    height: 37px;
+    padding-left: 17px;
+    border: 0px;
+    box-shadow: 0px 3px 3px rgba(0,0,0,0.2);
+    margin-right: 15px;
+    color: #faf3d9;
+
+}
+
+.form{
+    width: 838px;
+    margin: 0px auto;
+    padding-top: 17px;
+}
+
+.cell{
+    float: left;
+    border-radius: 3px;
+    background: white;
+    display: block;
+    width: 247px;
+    height: 37px;
+    padding-left: 17px;
+    border: 0px;
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.2);
+    margin-right: 15px;
+}
+
+#fourth{
+    height: 485px;
+    background: #faecc7;
+}
+
+.list1{
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 40px;
+}
+
+.label1{
+    text-align: center;
+    padding-bottom: 5px;
+    padding-top: 10px;
+}
+
+
+
+#fourth p{
+    margin-top: 0px;
+    padding-left: 17px;
+    margin-bottom: 12px;
+}
+
+#fifth{
+    height: 540px;
+}
+
+
+.photos{
+    margin-top: 25px;
+}
+
+#curls{
+    height: 1130px;
+}
+
+#bundle{
+    height:650px;
+}
+
+#fotoset{
+    height:1280px;
+}
+
+#katalog{
+    height:1230px;
+}
+
+#about_us{
+    margin-top: -20px;
+    height:620px;
+}
+
+.about_us{
+    margin-top: 15px;
+    width: 1010px;
+    text-align: left;
+}
+
+#partners{
+    height:320px;
+}
+
+#partners p{
+    text-align: center;
+    margin-top: 25px;
+}
+
+.partner{
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.2);
+    border-radius: 15px;
+    margin-right: 110px;
+}
+.partner3{
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.2);
+    border-radius: 15px;
+    margin-right: 30px;
+}
+
+#prise{
+    height:600px;
+
+}
+
+#reviews{
+    padding-top: 20px;
+    height:855px;
+}
+
+.reviews{
+    float: left;
+    padding-top: 10px;
+    width: 800px;
+    text-align: left;
+    margin-bottom: 10px;
+    margin-left: 142px;
+}
+
+#footer{
+    background: #faecc7;
+}
+
+.foot1{
+    float: left;
+    margin-left: 0px;
+    margin-top: 10px;
+}
+
+.foot2{
+    float: right;
+    margin-top: 10px;
+}
+
+

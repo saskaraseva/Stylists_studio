@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block title %}Прическа пучок{% endblock %}
+{% block body %}
+
+
+    <section id ="bundle">
+
+    <div class="container">
+        <div class="imagine">
+            {% load static %}
+            <img src="{% static 'images/monogram.png' %}">
+            <h3>Прическа пучок</h3>
+        </div>
+
+        <div class="second_photos">
+
+                <div class="col-md-4">
+                    <a href="{% static 'images/52.jpg' %}" target="_blank">
+                          <img src="{% static 'images/52.jpg' %}" alt="bride" style= "width: 100%" >
+                    </a>
+                </div>
+
+                <div class="col-md-4">
+                    <a href="{% static 'images/53.jpg' %}" target="_blank">
+                          <img src="{% static 'images/53.jpg' %}" alt="bride" style= "width: 100%">
+                    </a>
+                </div>
+
+                <div class="col-md-4">
+                    <a href="{% static 'images/54.jpg' %}" target="_blank">
+                          <img src="{% static 'images/54.jpg' %}" alt="bride" style= "width: 100%">
+                    </a>
+                </div>
+
+        </div>
+    </div>
+
+    </section>
+
+
+{% endblock %}

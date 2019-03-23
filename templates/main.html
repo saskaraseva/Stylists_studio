@@ -1,0 +1,146 @@
+{% extends 'base.html' %}
+
+{% block title %}Главная страница{% endblock %}
+
+{% block body %}
+
+
+    <sectin id = "first">
+        <div class="container">
+
+            <div class="girls">
+                {% load static %}
+                <img src="{% static 'images/girls.png' %}" style="width:100%">
+            </div>
+
+            <div class="hello">
+                <img src="{% static 'images/monogram.png' %}">
+                <h1>Что такое «Ваниль»?</h1>
+                <p>Это первая в городе школа-студия выездных свадебных стилистов.
+                    Теперь быть красивой в День свадьбы стало гораздо проще!
+                    Стилисты нашей студии выезжают на дом и могут сделать причёску и макияж на высококачественной профессиональной косметике,
+                    помогут подобрать красивый и органичный образ, который подойдёт именно Вам! Мы сотрудничаем с с лучшими свадебными фотографами и флористами города!
+                </p>
+
+                <a href="/about_us">
+                    <img src="{% static 'images/smallmono.png' %}" class="smono">
+                    <button type="button" class="btn-link">Узнать больше</button>
+                    <img src="{% static 'images/smallmono1.png' %}" class="smono">
+                </a>
+            </div>
+
+        </div>
+    </sectin>
+
+
+    <section id = "second">
+        <div class="container-fluid">
+            <div class="container">
+
+            <div class="imagine">
+                <img src="{% static 'images/monogram.png' %}">
+                <h3>Представьте, каким будет Ваш образ</h3>
+            </div>
+
+            <div class="second_photos">
+                <div class="row">
+
+                    <div class="col-md-4">
+                        <a href="{% static 'images/br3.jpg' %}" target="_blank">
+                          <img src="{% static 'images/br3.jpg' %}" alt="bride" style= "width: 100%">
+                        </a>
+
+                    </div>
+
+                    <div class="col-md-4">
+                        <a href="{% static 'images/br1.jpg' %}" target="_blank">
+                          <img src="{% static 'images/br1.jpg' %}" alt="bride" style= "width: 100%">
+                        </a>
+                    </div>
+
+                    <div class="col-md-4">
+                        <a href="{% static 'images/br4.jpg' %}" target="_blank">
+                          <img src="{% static 'images/br4.jpg' %}" alt="bride" style="width:100%">
+                        </a>
+                    </div>
+
+
+                    <div class="see_more">
+                        <a href="/katalog">
+                            <button type="button" class="btn-link">Смотреть еще</button>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+    <section id = "third">
+        <div class="container">
+            <div class="imagine">
+                <img src="{% static 'images/monogram.png' %}" >
+                <h3> Получить консультацию по всем вопросам</h3>
+            </div>
+
+            {% if errors %}
+            <ul>
+                {% for error in errors %}
+                    <li style="color: red;">{{ error }}</li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+
+            <form action="" method="post" class="form">
+                <div class="container">
+                    <input name="name" type="text" placeholder="Введите имя" class="cell" value="{{ form.name }}">
+                    <input name="phone" type="text" placeholder="Введите телефон" class="cell" value="{{ form.phone }}">
+                    <button type="submit" class="button">Получить консультацию</button>
+                    {% csrf_token %}
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section id="fourth">
+        <div class="container">
+
+            <div class="imagine">
+                <img src="{% static 'images/monogram.png' %}" >
+                <h3>Как мы работаем?</h3>
+            </div>
+
+            <div class="list1">
+                <img src="{% static 'images/label.png' %}" alt="label" class="label1">
+                <p>Звоните по номеру 8-915-889-00-78 или оставляете заявку</p>
+                <img src="{% static 'images/label.png' %}" alt="label" class="label1">
+                <p>Вам звонит стилист, консультирует Вас, вносите предоплату</p>
+                <img src="{% static 'images/label.png' %}" alt="label" class="label1">
+                <p>Помогаем выбрать стилиста, оговариваем детали, отправляем договор на почту</p>
+                <img src="{% static 'images/label.png' %}" alt="label" class="label1">
+                <p>По желанию проводите репетицию</p>
+                <img src="{% static 'images/label.png' %}" alt="label" class="label1">
+                <p>Создание прически и макияжа</p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section id="partners">
+        <div class="imagine">
+            <img src="{% static 'images/monogram.png' %}" >
+            <h3>Наши партнеры</h3>
+        </div>
+        <p>
+            <img src="{% static 'images/partner1.jpeg' %}" alt="partner" class="partner">
+            <img src="{% static 'images/partner2.jpeg' %}" alt="partner" class="partner">
+            <img src="{% static 'images/partner3.jpeg' %}" alt="partner" class="partner3">
+        </p>
+
+    </section>
+{% endblock %}

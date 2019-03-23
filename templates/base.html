@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+
+	<title>{% block title %}{% endblock %}</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/ba.css' %}">
+    <link rel="stylesheet" href="{% static 'css/ma.css' %}">
+
+
+</head>
+<body>
+
+    <section id = "hair">
+        <div class="container">
+
+            <img src="{% static 'images/logo6.png' %}" class="logo">
+
+            <div class="contacts">
+                <img src="{% static 'images/phone.png' %}">
+                <span>+7-985-133-90-94</span>
+                <p>
+                    <a href="/https://vk.com/id191654338" target="_self">
+                        <img src="{% static 'images/vk.png' %}" class="social">
+                    </a>
+                    <a href="/https://www.instagram.com/oksanaizmaylova" target="_self">
+                        <img src="{% static 'images/inst.png' %}" class="social">
+                    </a>
+                    <a href="/https://www.facebook.com/oksana.izmaylova.1" target="_self">
+                        <img src="{% static 'images/fb.png' %}" class="social">
+                    </a>
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+        <section id="navbar">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="/main">Ваниль</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li><a href="/main">Главная</a></li>
+                    <li><a href="/about_us">О нас</a></li>
+                    <li><a href="/katalog">Каталог</a></li>
+                    <li><a href="/price">Цены</a></li>
+                    <li><a href="/contacts">Фото и отзывы клиентов</a></li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+
+    {% block body %}{% endblock %}
+
+    <section id="footer">
+        <div class="container">
+            <div class="modal-footer">
+                <p class="foot1">2018 год / Все права защищены</p>
+
+                <p class="foot2">e-mail: oksanaizmaylova13@gmail.com</p>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+</html>
